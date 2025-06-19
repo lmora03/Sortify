@@ -192,6 +192,7 @@ public class SortifyFrame implements PropertyChangeListener {
                     for (String s : selected) {
                         tags.selectTag(s);
                     }
+                    selectedFile.setTags(tags);
                     myPCS.firePropertyChange("editedEnhancedFile", null, selectedFile);
                     myEditFilePanel.clear();
                 }

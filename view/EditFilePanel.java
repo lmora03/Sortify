@@ -278,6 +278,7 @@ public class EditFilePanel extends JPanel implements ItemListener {
             myFileTags.addNewTag(result);
             myTagListPanel.removeAll();
             setTags();
+            editFile(myEnhancedFile);
             myTagListPanel.revalidate();
             myTagListPanel.repaint();
         });
